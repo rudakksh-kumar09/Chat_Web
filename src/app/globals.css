@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ─── Dark theme (default) ────────────────────────────────── */
+  :root,
+  [data-theme="dark"] {
+    --background: 232 43% 10%;
+    --foreground: 220 20% 95%;
+    --card: 233 41% 16%;
+    --card-foreground: 220 20% 95%;
+    --popover: 233 41% 16%;
+    --popover-foreground: 220 20% 95%;
+    --primary: 164 98% 52%;          /* mint #0FFCBE */
+    --primary-foreground: 232 43% 10%;
+    --secondary: 232 35% 21%;
+    --secondary-foreground: 220 20% 95%;
+    --muted: 232 35% 19%;
+    --muted-foreground: 218 11% 60%;
+    --accent: 232 35% 23%;
+    --accent-foreground: 220 20% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 232 30% 22%;
+    --input: 232 43% 13%;
+    --ring: 164 98% 52%;
+    --radius: 0.75rem;
+  }
+
+  /* ─── White theme ──────────────────────────────────────────── */
+  [data-theme="white"] {
+    --background: 0 0% 100%;
+    --foreground: 232 43% 12%;
+    --card: 213 20% 97%;
+    --card-foreground: 232 43% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 232 43% 12%;
+    --primary: 224 72% 50%;          /* indigo #2F6CE0 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 232 43% 12%;
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 42%;
+    --accent: 0 0% 89%;
+    --accent-foreground: 232 43% 12%;
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 86%;
+    --input: 0 0% 94%;
+    --ring: 224 72% 50%;
+    --radius: 0.75rem;
+  }
+
+  /* ─── Sunset Orange theme (#FF5841) ────────────────────────── */
+  [data-theme="sunset"] {
+    --background: 15 50% 7%;
+    --foreground: 20 20% 95%;
+    --card: 15 42% 12%;
+    --card-foreground: 20 20% 95%;
+    --popover: 15 42% 12%;
+    --popover-foreground: 20 20% 95%;
+    --primary: 8 100% 62%;           /* #FF5841 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 15 30% 18%;
+    --secondary-foreground: 20 20% 95%;
+    --muted: 15 32% 16%;
+    --muted-foreground: 15 15% 58%;
+    --accent: 15 32% 20%;
+    --accent-foreground: 20 20% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 15 28% 22%;
+    --input: 15 50% 10%;
+    --ring: 8 100% 62%;
+    --radius: 0.75rem;
+  }
+
+  /* ─── Red-Violet theme (#C53678) ───────────────────────────── */
+  [data-theme="violet"] {
+    --background: 295 30% 7%;
+    --foreground: 295 12% 95%;
+    --card: 295 25% 12%;
+    --card-foreground: 295 12% 95%;
+    --popover: 295 25% 12%;
+    --popover-foreground: 295 12% 95%;
+    --primary: 334 62% 49%;          /* #C53678 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 295 22% 17%;
+    --secondary-foreground: 295 12% 95%;
+    --muted: 295 22% 16%;
+    --muted-foreground: 295 8% 58%;
+    --accent: 295 22% 20%;
+    --accent-foreground: 295 12% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 295 18% 22%;
+    --input: 295 30% 10%;
+    --ring: 334 62% 49%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
