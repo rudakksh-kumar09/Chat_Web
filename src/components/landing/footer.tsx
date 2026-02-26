@@ -32,11 +32,6 @@ export function LandingFooter() {
             </Link>
           ))}
         </div>
-
-        {/* Copy */}
-        <p className="text-xs text-lmuted/50">
-          © {new Date().getFullYear()} Chatly. Built with ❤️ for the modern web.
-        </p>
       </div>
     </footer>
   );
