@@ -219,26 +219,6 @@ export function HeroSection() {
           </motion.div>
 
           {/* Social proof */}
-          <motion.div
-            custom={4}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="flex items-center gap-4"
-          >
-            <div className="flex -space-x-2">
-              {["#0FFCBE", "#C5ADC5", "#B2B5E0", "#6EE7B7"].map((c, i) => (
-                <div
-                  key={i}
-                  className="h-8 w-8 rounded-full border-2 border-lbg bg-lcard ring-1 ring-white/10"
-                  style={{ background: `${c}33` }}
-                />
-              ))}
-            </div>
-            <p className="text-xs text-lmuted">
-              <span className="font-semibold text-white">2,000+</span> people already chatting
-            </p>
-          </motion.div>
         </div>
 
         {/* Right – mockup */}
